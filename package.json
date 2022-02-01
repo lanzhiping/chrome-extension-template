@@ -1,0 +1,22 @@
+{
+  "name": "chrome-extension-template",
+  "version": "1.0.0",
+  "description": "A template util for creating chrome extension fast",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "lanzhiping6@gmail.com",
+  "license": "MIT",
+  "bin": {
+    "create-chrome-extension": "bin/index.js"
+  },
+  "prettier": "prettier-config-standard",
+  "dependencies": {
+    "prompts": "^2.4.2",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "prettier-config-standard": "^4.0.0"
+  }
+}
