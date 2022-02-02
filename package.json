@@ -1,21 +1,32 @@
 {
   "name": "chrome-extension-template",
   "version": "1.0.0",
-  "description": "A template util for creating chrome extension fast",
+  "description": "A template util for creating chrome extension quickly",
   "scripts": {
-    "test": "test"
+    "watch:dev": "NODE_ENV=development nodemon ./bin/index.js --watch template --watch bin",
+    "start:dev": "NODE_ENV=development ./bin/index.js"
   },
   "author": "lanzhiping6@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lanzhiping/chrome-extension-template.git"
+  },
   "license": "MIT",
   "bin": {
     "create-chrome-extension": "bin/index.js"
   },
   "prettier": "prettier-config-standard",
   "dependencies": {
+    "app-root-path": "^3.0.0",
+    "cpy": "^8.1.2",
     "prompts": "^2.4.2",
+    "template-file": "^6.0.0",
+    "update-json-file": "^1.1.1",
+    "url-regexp": "^1.0.2",
     "validate-npm-package-name": "^3.0.0"
   },
   "devDependencies": {
+    "nodemon": "^2.0.15",
     "prettier": "^2.5.1",
     "prettier-config-standard": "^4.0.0"
   }
