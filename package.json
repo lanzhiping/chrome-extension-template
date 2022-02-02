@@ -1,6 +1,6 @@
 {
   "name": "chrome-extension-template",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A template util for creating chrome extension quickly",
   "scripts": {
     "watch:dev": "NODE_ENV=development nodemon ./bin/index.js --watch template --watch bin",

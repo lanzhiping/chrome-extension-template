@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const cpy = require('cpy')
+const { exec } = require('child_process')
 const appRoot = require('app-root-path')
 const updateJsonFile = require('update-json-file')
 const { renderToFolder } = require('template-file')
@@ -80,6 +81,11 @@ const { readConfig } = require('./readConfig')
       }
     }
   ).then(() => console.info('updated package.json'))
+
+  // install dependencies
+  await new Promise((resolve) => {
+    exec('npm install', () => resolve())
+  })
 
   console.info('done')
 })()

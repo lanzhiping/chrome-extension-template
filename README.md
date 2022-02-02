@@ -5,7 +5,7 @@ A template util for creating chrome extension quickly
 ## how to use
 
 ```bash
-$ npm install chrome-extension-template
+$ npm install chrome-extension-template -D
 $ npx chrome-extension-template
 ```
 
@@ -32,6 +32,5 @@ this generate a simple chrome extension app in your root directory, including:
 then you can build the simple chrome extension app to load into your chrome for fun
 
 ```bash
-$ npm install
 $ npm run build
 ```
