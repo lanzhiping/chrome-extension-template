@@ -1,6 +1,6 @@
 {
   "name": "chrome-extension-template",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A template util for creating chrome extension quickly",
   "scripts": {
     "watch:dev": "NODE_ENV=development nodemon ./bin/index.js --watch template --watch bin",
@@ -9,7 +9,7 @@
   "author": "lanzhiping6@gmail.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lanzhiping/chrome-extension-template.git"
+    "url": "git+https://github.com/lanzhiping/chrome-extension-template.git"
   },
   "license": "MIT",
   "bin": {
@@ -19,6 +19,7 @@
   "dependencies": {
     "app-root-path": "^3.0.0",
     "cpy": "^8.1.2",
+    "glob-parent": "^6.0.2",
     "prompts": "^2.4.2",
     "template-file": "^6.0.0",
     "update-json-file": "^1.1.1",
@@ -29,5 +30,17 @@
     "nodemon": "^2.0.15",
     "prettier": "^2.5.1",
     "prettier-config-standard": "^4.0.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/lanzhiping/chrome-extension-template/issues"
+  },
+  "homepage": "https://github.com/lanzhiping/chrome-extension-template#readme",
+  "keywords": [
+    "chrome",
+    "chrome-extension",
+    "chrome-extension-template",
+    "browser-extension",
+    "template",
+    "scaffold"
+  ]
 }

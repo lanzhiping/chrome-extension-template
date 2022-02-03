@@ -5,7 +5,8 @@ A template util for creating chrome extension quickly
 ## how to use
 
 ```bash
-$ npm install chrome-extension-template -D
+$ npm init --yes
+$ npm install chrome-extension-template --save-dev
 $ npx chrome-extension-template
 ```
 
