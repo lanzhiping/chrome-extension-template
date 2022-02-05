@@ -4,7 +4,8 @@
   "description": "A template util for creating chrome extension quickly",
   "scripts": {
     "watch:dev": "NODE_ENV=development nodemon ./bin/index.js --watch template --watch bin",
-    "start:dev": "NODE_ENV=development ./bin/index.js"
+    "start:dev": "NODE_ENV=development ./bin/index.js",
+    "commit": "cz"
   },
   "author": "lanzhiping6@gmail.com",
   "repository": {
@@ -27,6 +28,8 @@
     "validate-npm-package-name": "^3.0.0"
   },
   "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "nodemon": "^2.0.15",
     "prettier": "^2.5.1",
     "prettier-config-standard": "^4.0.0"
@@ -42,5 +45,10 @@
     "browser-extension",
     "template",
     "scaffold"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
