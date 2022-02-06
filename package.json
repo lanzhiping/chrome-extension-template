@@ -41,10 +41,12 @@
   "keywords": [
     "chrome",
     "chrome-extension",
+    "chrome-extension-development",
+    "chrome-extension-sample",
     "chrome-extension-template",
-    "browser-extension",
-    "template",
-    "scaffold"
+    "chrome-extension-boilerplate",
+    "chrome-extension-manifest-v3",
+    "chrome-extension-github"
   ],
   "config": {
     "commitizen": {
